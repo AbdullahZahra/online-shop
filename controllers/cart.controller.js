@@ -36,10 +36,10 @@ function updateCartItem(req, res) {
 
   res.json({
     message: "Item updated!",
-    updateCartData: {
+    updatedCartData: {
       newTotalQuantity: cart.totalQuantity,
       newTotalPrice: cart.totalPrice,
-      updateItemPrice: updatedItemData.updatedItemPrice,
+      updatedItemPrice: updatedItemData.updatedItemPrice,
     },
   });
 }

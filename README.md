@@ -44,3 +44,17 @@ The path to the images directory related to the project root directory is as fol
 ```bash
 /product-data/images
 ```
+
+### Setting up the Stripe API Key
+
+You need to add your stripe key in the
+```bassh
+/controllers/orders.controller.js
+```
+and use your own key!
+```js
+const stripe = require("stripe")(
+  "Add your API key right here!"
+);
+```
+
